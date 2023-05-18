@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/style.css"/>
+    <title>Actualizar</title>
+</head>
+<body>
+    <center>
+        <div class="div-center">
+        <div class="div-form">
+        <form action="/updatePerson" method="POST">
+                <h1>Actualizar Persona</h1>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" name="nombre" value="<%= `${myPerson.nombre}` %>"><br/><br/>
+            <label for="nss">Nss</label><br>
+            <input type="text" id="nss" name="nss" value="<%= `${myPerson.nss}` %>"><br/><br/>
+            <label for="edad">Edad</label><br>
+            <input type="text" id="edad" name="edad" value="<%= `${myPerson.edad}` %>"><br/><br/>
+            <label for="tipoSangre">Tipo de sangre</label><br>
+            <input type="text" id="tipoSangre" name="tipoSangre" value="<%= `${myPerson.tipoSangre}` %>"><br/><br/>
+            <label for="objId">Id</label><br>
+            <input type="text" id="objId" name="objId" value="<%= `${myPerson._id}` %>"><br/><br/>
+
+            <input class='agregar-btn' type="submit" value="Actualizar">
+        </form>
+    </div>
+</div>
+    </center>
+</body>
+</html>

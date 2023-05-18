@@ -1,0 +1,93 @@
+
+.body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+}
+table th,
+table td {
+   padding: 8px;
+  text-align: center;
+  border: 1px solid black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+table th {
+    background-color: rgb(33, 165, 141);
+}
+table td {
+    background-color: rgba(114, 176, 164, 0.761);
+}
+
+.agregar-btn{
+text-align: center;
+background-color: rgb(160, 204, 94);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-decoration: none;
+border-radius: 10px;
+padding: 6px 12px;
+color: black;
+}
+
+.modificar-btn{
+    text-align: center;
+    background-color: rgb(57, 139, 246);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 2px 7px;
+    color: black;
+
+}
+
+.eliminar-btn{
+text-align: center;
+background-color: rgb(255, 79, 79);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-decoration: none;
+border-radius: 10px;
+padding: 2px 7px;
+color: black;
+}
+
+.div-form{
+    background-color: rgb(214, 255, 196);
+    padding-left: 50px;
+    padding-right: 50px;
+    position: absolute;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.div-center{
+padding: 100px;
+padding-left: 550px;
+
+}
+
+nav a:visited, nav a:link{
+    background-color: lightblue;
+    color: black;
+    font-family: arial;
+    font-size: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-left: 600px;
+}
+
+nav a:hover{
+    background-color: gray;
+}
+
+.div-buscar{
+    background-color: lightblue;
+    width: 200px;
+    padding: 10px 25px;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    margin: 20px auto;
+}

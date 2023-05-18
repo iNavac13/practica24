@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/style.css"/>
+    <title>Personas</title>
+</head>
+<body>
+  <center>  
+    <div> 
+      <div class="div-buscar">
+        <form action="find" method="post">
+          <label for="nombre">Nombre</label></br>
+          <input type="text" id="nombre" name="nombre"><br>
+        </br>
+          <input type="submit" class="agregar-btn" value="Buscar">
+        </form>
+      </div>
+    <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Tipo de sangre</th>
+            <th>Nss</th>
+            <th>Modificar</th>
+            <th>Eliminar</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <% for (let i = 0; i < data.length; i++) { %>
+                <tr>
+                    <td><%=data[i].nombre%></td>
+                    <td><%=data[i].edad%></td>
+                    <td><%=data[i].tipoSangre%></td>
+                    <td><%=data[i].nss%></td>
+                    <td><a class="modificar-btn" href="<%= `findById/${data[i]._id}` %>">Modificar</a></td>
+                    <td><a class="eliminar-btn" href="<%= `removePerson/${data[i]._id}` %>">Eliminar</a></td>
+                  </tr>
+            <% } %>            
+        </tbody>
+    </table>
+    <br>
+      <a class="agregar-btn" href="/person">Agregar</a>
+    </center>
+  </div> 
+</body>
+</html>
